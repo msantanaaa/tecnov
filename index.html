@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnov - Loja Gamer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="img/logotecnov.webp.jpeg" alt="Logo da Tecnov" class="logo">
+
+        <h1>Tecnov</h1>
+        <p>Os melhores eletrônicos e acessórios pelo melhor preço!</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#carrinho">Carrinho</a>
+            <a href="#login">Minha conta</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <h2>Bem-vindo à Tecnov!</h2>
+            <p>Encontre os melhores produtos para o seu universo gamer.</p>
+            <a href="#produtos">Conhecer produtos</a>
+        </section>
+
+        <section id="login">
+            <h2>Entrar na minha conta</h2>
+
+            <form id="form-login" action="#" method="post">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Digite seu e-mail"
+                    autocomplete="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"
+                    placeholder="Digite sua senha"
+                    autocomplete="current-password" required>
+
+                <button type="submit">Entrar no site</button>
+            </form>
+
+            <p>Ainda não possui uma conta? <a href="#cadastro">Cadastre-se</a></p>
+            <a href="#recuperar-senha">Esqueci minha senha</a>
+        </section>
+
+        <section id="cadastro">
+            <h2>Criar minha conta</h2>
+
+            <form id="form-cadastro" action="#" method="post">
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="novo-email">E-mail:</label>
+                <input type="email" id="novo-email" name="email" required>
+
+                <label for="nova-senha">Senha:</label>
+                <input type="password" id="nova-senha" name="senha" required>
+
+                <label for="confirmar-senha">Confirmar senha:</label>
+                <input type="password" id="confirmar-senha"
+                    name="confirmar-senha" required>
+
+                <button type="submit">Criar conta</button>
+            </form>
+        </section>
+
+        <section id="recuperar-senha">
+            <h2>Recuperar senha</h2>
+
+            <form id="form-recuperacao" action="#" method="post">
+                <label for="email-recuperacao">Informe seu e-mail:</label>
+                <input type="email" id="email-recuperacao"
+                    name="email" required>
+
+                <button type="submit">Enviar solicitação</button>
+            </form>
+        </section>
+
+        <section id="produtos">
+            <h2>Nosso catálogo</h2>
+
+            <label for="categoria">Categorias:</label>
+            <select id="categoria" name="categoria">
+                <option value="">Todas as categorias</option>
+                <option value="playstation">PlayStation</option>
+                <option value="xbox">Xbox</option>
+                <option value="nintendo">Nintendo</option>
+                <option value="audio">Fones e Headphones</option>
+                <option value="microfones">Microfones Gamer</option>
+                <option value="coolers">Coolers e Resfriamento</option>
+                <option value="pcs">PCs Gamers</option>
+                <option value="notebooks">Notebooks Gamers</option>
+            </select>
+
+            <label for="pesquisa">Pesquisar produto:</label>
+            <input type="search" id="pesquisa" name="pesquisa"
+                placeholder="Digite o nome do produto">
+
+            <!-- PLAYSTATION -->
+
+            <section id="categoria-playstation" class="categoria-produtos">
+                <h3>PlayStation</h3>
+
+                <article class="produto" data-produto="ps5">
+                    <img src="img/ps5.webp.jpeg" alt="Console PlayStation 5" class="imagem-produto">
+                    <h4>PlayStation 5</h4>
+                    <p>Console PlayStation 5.</p>
+                    <p class="preco">R$ 3.600,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="ps4">
+                    <img src="img/ps4.webp.jpeg" alt="Console PlayStation 4" class="imagem-produto">
+                    <h4>PlayStation 4</h4>
+                    <p>Console PlayStation 4.</p>
+                    <p class="preco">R$ 1.600,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="ps3">
+                    <img src="img/ps3.webp.jpeg" alt="Console PlayStation 3" class="imagem-produto">
+                    <h4>PlayStation 3</h4>
+                    <p>Console PlayStation 3.</p>
+                    <p class="preco">R$ 1.200,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="ps2">
+                    <img src="img/ps2.webp.jpeg" alt="Console PlayStation 2" class="imagem-produto">
+                    <h4>PlayStation 2</h4>
+                    <p>Console PlayStation 2.</p>
+                    <p class="preco">R$ 500,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="ps1">
+                    <img src="img/ps1.webp.jpeg" alt="Console PlayStation original" class="imagem-produto">
+                    <h4>PlayStation 1</h4>
+                    <p>Console PlayStation original.</p>
+                    <p class="preco">R$ 350,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+            </section>
+
+            <!-- XBOX -->
+
+            <section id="categoria-xbox" class="categoria-produtos">
+                <h3>Xbox</h3>
+
+                <article class="produto" data-produto="series-s">
+                    <img src="img/xboxseriesS.wepb.jpeg" alt="Console Xbox Series S" class="imagem-produto">
+                    <h4>Xbox Series S</h4>
+                    <p>Console Xbox Series S.</p>
+                    <p class="preco">R$ 3.800,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="series-x">
+                    <img src="img/xboxseriesX.webp.jpeg" alt="Console Xbox Series X" class="imagem-produto">
+                    <h4>Xbox Series X</h4>
+                    <p>Console Xbox Series X.</p>
+                    <p class="preco">R$ 6.500,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="xbox-one">
+                    <img src="img/xboxone.webp.jpeg" alt="Console Xbox One" class="imagem-produto">
+                    <h4>Xbox One</h4>
+                    <p>Console Xbox One.</p>
+                    <p class="preco">R$ 1.200,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="xbox-360">
+                    <img src="img/xbox360.webp.jpeg" alt="Console Xbox 360" class="imagem-produto">
+                    <h4>Xbox 360</h4>
+                    <p>Console Xbox 360.</p>
+                    <p class="preco">R$ 750,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="xbox-classico">
+                    <img src="img/xboxclassic.webp.jpeg" alt="Xbox clássico" class="imagem-produto">
+                    <h4>Xbox Clássico</h4>
+                    <p>Primeira geração do Xbox.</p>
+                    <p class="preco">R$ 560,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+            </section>
+
+            <!-- NINTENDO -->
+
+            <section id="categoria-nintendo" class="categoria-produtos">
+                <h3>Nintendo</h3>
+
+                <article class="produto" data-produto="switch">
+                    <img src="img/nitendoswitch.webp.jpeg" alt="Nintendo Switch" class="imagem-produto">
+                    <h4>Nintendo Switch</h4>
+                    <p>Console Nintendo Switch.</p>
+                    <p class="preco">R$ 2.300,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="switch-lite">
+                    <img src="img/nitendositchlite.webp.jpeg" alt="Nintendo Switch Lite" class="imagem-produto">
+                    <h4>Nintendo Switch Lite</h4>
+                    <p>Console portátil Nintendo Switch Lite.</p>
+                    <p class="preco">R$ 2.100,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="switch-oled">
+                    <img src="img/nitendoolet.webp.jpeg" alt="Nintendo Switch OLED" class="imagem-produto">
+                    <h4>Nintendo Switch OLED</h4>
+                    <p>Console Nintendo Switch OLED.</p>
+                    <p class="preco">R$ 2.000,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="wii-u">
+                    <img src="img/nitendowillu.webp.jpeg" alt="Nintendo Wii U" class="imagem-produto">
+                    <h4>Nintendo Wii U</h4>
+                    <p>Console Nintendo Wii U.</p>
+                    <p class="preco">R$ 1.800,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="wii">
+                    <img src="img/nitendowii.webp.jpeg" alt="Nintendo Wii" class="imagem-produto">
+                    <h4>Nintendo Wii</h4>
+                    <p>Console Nintendo Wii.</p>
+                    <p class="preco">R$ 1.700,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+            </section>
+
+            <!-- AUDIO E ACESSORIOS -->
+
+            <section id="categoria-acessorios" class="categoria-produtos">
+                <h3>Áudio e acessórios Gamer</h3>
+
+                <article class="produto" data-produto="fone">
+                    <img src="img/headsetgamer.webp.jpeg" alt="Fone de ouvido Gamer" class="imagem-produto">
+                    <h4>Fones de ouvido Gamer</h4>
+                    <p>Fones para jogos.</p>
+                    <p class="preco">R$ 50,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="headphone">
+                    <img src="img/headfonegamer.webp.jpeg" alt="Headphone Gamer" class="imagem-produto">
+                    <h4>Headphones Gamer</h4>
+                    <p>Headphones para jogos e comunicação.</p>
+                    <p class="preco">R$ 150,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="microfone">
+                    <img src="img/microfonestreming.webp.jpeg" alt="Microfone para Streaming" class="imagem-produto">
+                    <h4>Microfones para Streaming</h4>
+                    <p>Microfones para lives e transmissões.</p>
+                    <p class="preco">R$ 89,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+            </section>
+
+            <!-- COOLERS -->
+
+            <section id="categoria-coolers" class="categoria-produtos">
+                <h3>Coolers e Resfriamento</h3>
+
+                <article class="produto" data-produto="cooler-console">
+                    <img src="img/coolerconsole.webp.jpeg" alt="Cooler para Console" class="imagem-produto">
+                    <h4>Cooler para Console</h4>
+                    <p>Sistema auxiliar de resfriamento para consoles.</p>
+                    <p class="preco">R$ 200,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="cooler-pc">
+                    <img src="img/coolerpc.webp.jpeg" alt="Cooler para Computador" class="imagem-produto">
+                    <h4>Cooler para Computador</h4>
+                    <p>Sistema de resfriamento para computadores.</p>
+                    <p class="preco">R$ 600,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+            </section>
+
+            <!-- COMPUTADORES E NOTEBOOKS -->
+
+            <section id="categoria-computadores" class="categoria-produtos">
+                <h3>Computadores e Notebooks</h3>
+
+                <article class="produto" data-produto="pc-gamer">
+                    <img src="img/pcgamer.webp.jpeg" alt="PC Gamer" class="imagem-produto">
+                    <h4>PC Gamer</h4>
+                    <p>Computador para jogos.</p>
+                    <p class="preco">R$ 5.000,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="produto" data-produto="notebook-gamer">
+                    <img src="img/notebookgamer.webp.jpeg" alt="Notebook Gamer" class="imagem-produto">
+                    <h4>Notebook Gamer</h4>
+                    <p>Notebook para jogos e atividades de alto desempenho.</p>
+                    <p class="preco">R$ 3.000,00</p>
+                    <button type="button" class="adicionar-carrinho">Adicionar ao carrinho</button>
+                </article>
+            </section>
+
+        </section>
+
+        <section id="carrinho">
+            <h2>Meu carrinho</h2>
+
+            <div id="lista-carrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+
+            <p id="quantidade-itens">Quantidade de itens: 0</p>
+            <p id="valor-total">Valor total: R$ 0,00</p>
+
+            <button type="button" id="limpar-carrinho">Limpar carrinho</button>
+            <button type="button" id="finalizar-compra">Finalizar compra</button>
+        </section>
+
+        <section id="pagamento">
+            <h2>Finalizar pedido</h2>
+
+            <form id="form-pagamento" action="#" method="post">
+
+                <fieldset>
+                    <legend>Forma de pagamento</legend>
+
+                    <label>
+                        <input type="radio" name="pagamento" value="pix" required>
+                        Pix
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pagamento" value="cartao">
+                        Cartão
+                    </label>
+
+                    <label>
+                        <input type="radio" name="pagamento" value="boleto">
+                        Código de barras (Boleto)
+                    </label>
+                </fieldset>
+
+                <h3>Dados para entrega</h3>
+
+                <label for="nome-entrega">Nome completo:</label>
+                <input type="text" id="nome-entrega" name="nome-entrega" required>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento">
+
+                <button type="submit">Confirmar pedido</button>
+            </form>
+        </section>
+
+        <section id="pedidos">
+            <h2>Meus pedidos</h2>
+
+            <div id="lista-pedidos">
+                <p>Seus pedidos aparecerão aqui.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Tecnov - Loja de tecnologia e produtos gamers.</p>
+        <p>Projeto acadêmico de e-commerce.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
